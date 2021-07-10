@@ -7,7 +7,7 @@ Pre-requisites:
 
 2- Clone 'local' branch of the repository by running following command:
 
-git clone -b local <remote-repo-url>
+git clone -b local git@github.com:AnkurDubey09/Exercises.git
 
 Steps: 
 
