@@ -5,7 +5,9 @@ Pre-requisites:
 
 1- Node must be installed.
 
-2- Clone this repository.
+2- Clone 'local' branch of the repository by running following command:
+
+git clone -b local <remote-repo-url>
 
 Steps: 
 
