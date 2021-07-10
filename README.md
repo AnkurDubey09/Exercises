@@ -27,6 +27,8 @@ Steps:
   
     npm run test '@<tag_name>' OR npx wdio run ./wdio.conf.js --cucumberOpts.tagExpression '@<tag_name>' 
     
+  e- To run the test in HEADLESS mode, please run 'npm run test_headless' command on terminal.
+    
 4- To generate the report, run 'npm run gen_report' on terminal. This framework uses "allure" reporter for reporting.
 
 Scenarios: Please refer the 'SCENARIOS.md' for the scenarios.
