@@ -7,7 +7,7 @@ Feature: todos page verification
 
     Scenario: page verification when there is no todos item
         Then verify the title
-        And verify the todos page is loaded completely
+        And verify the todos page is loaded
         And verify footer links are not shown
 
     Scenario: page verification when there is a todos item

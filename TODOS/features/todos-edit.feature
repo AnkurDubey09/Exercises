@@ -15,18 +15,19 @@ Feature: edit todos items
             | TODOS_ITEM | FOOTER_COUNT |
             | PQRS       | 1 item left  |
             | WXYZ       | 2 items left |
-            | MNOP       | 3 items left |
+            | TEST       | 3 items left |
             | EFGH       | 4 items left |
             | ZABC       | 5 items left |
 
     
     Scenario Outline: edit the todos item
         When double click on "<TODO_ITEM>" todos item
-        And change its name from "<OLD>" to "<NEW>"
+        And edit todos item with "<ADD_TEXT>"
+        Then verify todos item "<TODO_ITEM>" is edited with "<EDITED_TODOS>"
         
     Examples:
-        | TODO_ITEM | OLD   | NEW   |
-        |   MNOP    | MNOP  | PONM  |
+        | TODO_ITEM |   ADD_TEXT     | EDITED_TODOS   |
+        |   TEST    |  SANITY        | TEST - SANITY  |
 
     Scenario Outline: verify todos items in different tabs
         When click on "<TAB>"

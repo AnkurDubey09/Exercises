@@ -4,10 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "npx wdio run ./wdio.conf.js --cucumberOpts.tagExpression",
-    "test_reg": "npx wdio run ./wdio.conf.js --cucumberOpts.tagExpression '@regression'",
-    "test_san": "npx wdio run ./wdio.conf.js --cucumberOpts.tagExpression '@sanity'",
-    "gen_report": "./node_modules/allure-commandline/dist/bin/allure open"
+    "test": "npx wdio run ./wdio-configs/wdio.conf.reg.js --cucumberOpts.tagExpression",
+    "test_reg": "npx wdio run ./wdio-configs/wdio.conf.js --cucumberOpts.tagExpression '@regression'",
+    "test_san": "npx wdio run ./wdio-configs/wdio.conf.js --cucumberOpts.tagExpression '@sanity'",
+    "gen_report": "./node_modules/allure-commandline/dist/bin/allure open",
+    "test_headless": "npx wdio run ./wdio-configs/wdio.conf.reg.js --capabilities[0].chromOptions.args '--headless' --cucumberOpts.tagExpression"
   },
   "keywords": [],
   "author": "",
