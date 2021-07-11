@@ -77,6 +77,9 @@ Then("verify the todos page is loaded", async()=>{
     expect(todosHeader).toBeDisplayed();
     expect(todosInput).toBeDisplayed();
     expect(footers.length).toBe(3);
+    expect(await footers[0].getText()).toBe(TestDate.footer1);
+    expect(await footers[1].getText()).toBe(TestDate.footer2);
+    expect(await footers[2].getText()).toBe(TestDate.footer3);
 });
 
 Then('verify footer links are not shown', async () => {
